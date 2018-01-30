@@ -182,9 +182,9 @@ public class MainActivity extends AppCompatActivity {
      */
     private void announceWinner() {
         if (scoreTeamRed > scoreTeamBlue) {
-            Toast.makeText(this, "A team won", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Red team won", Toast.LENGTH_LONG).show();
         } else if (scoreTeamRed < scoreTeamBlue) {
-            Toast.makeText(this, "B team won", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Blue team won", Toast.LENGTH_LONG).show();
         } else {
             Toast.makeText(this, "Draw", Toast.LENGTH_LONG).show();
         }
