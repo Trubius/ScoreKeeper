@@ -4,6 +4,4 @@
     <dimen name="activity_landscape">32dp</dimen>
     <dimen name="button_margin">8dp</dimen>
     <dimen name="button_landscape">4dp</dimen>
-    <dimen name="font_size_small">14sp</dimen>
-    <dimen name="font_size_large">26sp</dimen>
 </resources>

@@ -186,7 +186,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_margin"
+        android:layout_marginBottom="@dimen/activity_landscape"
         android:background="@color/orange"
         android:onClick="resetScoreButton"
         android:text="@string/reset" />
