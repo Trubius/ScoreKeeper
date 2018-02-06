@@ -33,53 +33,33 @@
 
             <Button
                 android:id="@+id/red4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/red"
+                style="@style/styleButtonRed"
                 android:onClick="addFourForTeamRed"
-                android:text="@string/eagle"
-                android:textColor="@color/amber" />
+                android:text="@string/eagle" />
 
             <Button
                 android:id="@+id/red3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/red"
+                style="@style/styleButtonRed"
                 android:onClick="addThreeForTeamRed"
-                android:text="@string/birdie"
-                android:textColor="@color/amber" />
+                android:text="@string/birdie" />
 
             <Button
                 android:id="@+id/red2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/red"
+                style="@style/styleButtonRed"
                 android:onClick="addTwoForTeamRed"
-                android:text="@string/par"
-                android:textColor="@color/amber" />
+                android:text="@string/par" />
 
             <Button
                 android:id="@+id/red1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/red"
+                style="@style/styleButtonRed"
                 android:onClick="addOneForTeamRed"
-                android:text="@string/bogey"
-                android:textColor="@color/amber" />
+                android:text="@string/bogey" />
 
             <Button
                 android:id="@+id/red0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/red"
+                style="@style/styleButtonRed"
                 android:onClick="addZeroForTeamRed"
-                android:text="@string/double_bogey"
-                android:textColor="@color/amber" />
+                android:text="@string/double_bogey" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -111,53 +91,33 @@
 
             <Button
                 android:id="@+id/blue4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/blue"
+                style="@style/styleButtonBlue"
                 android:onClick="addFourForTeamBlue"
-                android:text="@string/eagle"
-                android:textColor="@color/amber" />
+                android:text="@string/eagle" />
 
             <Button
                 android:id="@+id/blue3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/blue"
+                style="@style/styleButtonBlue"
                 android:onClick="addThreeForTeamBlue"
-                android:text="@string/birdie"
-                android:textColor="@color/amber" />
+                android:text="@string/birdie" />
 
             <Button
                 android:id="@+id/blue2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/blue"
+                style="@style/styleButtonBlue"
                 android:onClick="addTwoForTeamBlue"
-                android:text="@string/par"
-                android:textColor="@color/amber" />
+                android:text="@string/par" />
 
             <Button
                 android:id="@+id/blue1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/blue"
+                style="@style/styleButtonBlue"
                 android:onClick="addOneForTeamBlue"
-                android:text="@string/bogey"
-                android:textColor="@color/amber" />
+                android:text="@string/bogey" />
 
             <Button
                 android:id="@+id/blue0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_margin"
-                android:background="@color/blue"
+                style="@style/styleButtonBlue"
                 android:onClick="addZeroForTeamBlue"
-                android:text="@string/double_bogey"
-                android:textColor="@color/amber" />
+                android:text="@string/double_bogey" />
 
             <ImageView
                 android:layout_width="match_parent"

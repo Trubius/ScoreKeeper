@@ -12,4 +12,19 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
+    <style name="styleButtonRed">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@color/amber</item>
+    </style>
+
+    <style name="styleButtonBlue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:textColor">@color/amber</item>
+    </style>
 </resources>
