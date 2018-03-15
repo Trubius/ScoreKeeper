@@ -1,193 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
+
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />
+        android:id="@+id/imageView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/redteam"
+        android:src="@drawable/team_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/redTeam"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_landscape"
-        android:layout_marginEnd="@dimen/activity_landscape"
-        android:layout_marginStart="@dimen/activity_landscape"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintRight_toLeftOf="@+id/blueTeam"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+        <TextView
+            android:id="@+id/team_red_score"
+            style="@style/styleScore"
+            android:text="@string/_0"
+            android:textColor="@color/red" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/team_red" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/red4"
+            style="@style/styleButtonRed"
+            android:onClick="addFourForTeamRed"
+            android:text="@string/eagle" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <Button
+            android:id="@+id/red3"
+            style="@style/styleButtonRed"
+            android:onClick="addThreeForTeamRed"
+            android:text="@string/birdie" />
 
-            <TextView
-                android:id="@+id/team_red_score"
-                style="@style/styleScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_0"
-                android:textColor="@color/red" />
+        <Button
+            android:id="@+id/red2"
+            style="@style/styleButtonRed"
+            android:onClick="addTwoForTeamRed"
+            android:text="@string/par" />
 
-            <Button
-                android:id="@+id/red4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/red"
-                android:onClick="addFourForTeamRed"
-                android:text="@string/eagle"
-                android:textColor="@color/amber" />
+        <Button
+            android:id="@+id/red1"
+            style="@style/styleButtonRed"
+            android:onClick="addOneForTeamRed"
+            android:text="@string/bogey" />
 
-            <Button
-                android:id="@+id/red3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/red"
-                android:onClick="addThreeForTeamRed"
-                android:text="@string/birdie"
-                android:textColor="@color/amber" />
+        <Button
+            android:id="@+id/red0"
+            style="@style/styleButtonRed"
+            android:onClick="addZeroForTeamRed"
+            android:text="@string/double_bogey" />
 
-            <Button
-                android:id="@+id/red2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/red"
-                android:onClick="addTwoForTeamRed"
-                android:text="@string/par"
-                android:textColor="@color/amber" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/red1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/red"
-                android:onClick="addOneForTeamRed"
-                android:text="@string/bogey"
-                android:textColor="@color/amber" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/blueteam"
+        android:src="@drawable/team_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/red0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/red"
-                android:onClick="addZeroForTeamRed"
-                android:text="@string/double_bogey"
-                android:textColor="@color/amber" />
+    <LinearLayout
+        android:id="@+id/blueTeam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/redTeam"
+        app:layout_constraintRight_toLeftOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent">
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/team_blue_score"
+            style="@style/styleScore"
+            android:text="@string/_0"
+            android:textColor="@color/blue" />
 
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/activity_margin"
-            android:layout_marginStart="@dimen/activity_margin"
-            android:background="@android:color/transparent" />
+        <Button
+            android:id="@+id/blue4"
+            style="@style/styleButtonBlue"
+            android:onClick="addFourForTeamBlue"
+            android:text="@string/eagle" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <Button
+            android:id="@+id/blue3"
+            style="@style/styleButtonBlue"
+            android:onClick="addThreeForTeamBlue"
+            android:text="@string/birdie" />
 
-            <TextView
-                android:id="@+id/team_blue_score"
-                style="@style/styleScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/_0"
-                android:textColor="@color/blue" />
+        <Button
+            android:id="@+id/blue2"
+            style="@style/styleButtonBlue"
+            android:onClick="addTwoForTeamBlue"
+            android:text="@string/par" />
 
-            <Button
-                android:id="@+id/blue4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/blue"
-                android:onClick="addFourForTeamBlue"
-                android:text="@string/eagle"
-                android:textColor="@color/amber" />
+        <Button
+            android:id="@+id/blue1"
+            style="@style/styleButtonBlue"
+            android:onClick="addOneForTeamBlue"
+            android:text="@string/bogey" />
 
-            <Button
-                android:id="@+id/blue3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/blue"
-                android:onClick="addThreeForTeamBlue"
-                android:text="@string/birdie"
-                android:textColor="@color/amber" />
-
-            <Button
-                android:id="@+id/blue2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/blue"
-                android:onClick="addTwoForTeamBlue"
-                android:text="@string/par"
-                android:textColor="@color/amber" />
-
-            <Button
-                android:id="@+id/blue1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/blue"
-                android:onClick="addOneForTeamBlue"
-                android:text="@string/bogey"
-                android:textColor="@color/amber" />
-
-            <Button
-                android:id="@+id/blue0"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/button_landscape"
-                android:background="@color/blue"
-                android:onClick="addZeroForTeamBlue"
-                android:text="@string/double_bogey"
-                android:textColor="@color/amber" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/team_blue" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/blue0"
+            style="@style/styleButtonBlue"
+            android:onClick="addZeroForTeamBlue"
+            android:text="@string/double_bogey" />
     </LinearLayout>
 
     <Button
         android:id="@+id/reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_landscape"
+        android:layout_marginBottom="@dimen/button_margin"
         android:background="@color/orange"
         android:onClick="resetScoreButton"
-        android:text="@string/reset" />
-</RelativeLayout>
+        android:text="@string/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/redTeam" />
+
+</android.support.constraint.ConstraintLayout>

@@ -7,8 +7,10 @@
     </style>
 
     <style name="styleScore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">36sp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 

@@ -8,6 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/background"
         android:scaleType="centerCrop"
         android:src="@drawable/background" />
 
@@ -26,8 +27,6 @@
             <TextView
                 android:id="@+id/team_red_score"
                 style="@style/styleScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/_0"
                 android:textColor="@color/red" />
 
@@ -64,6 +63,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/redteam"
                 android:src="@drawable/team_red" />
 
         </LinearLayout>
@@ -84,8 +84,6 @@
             <TextView
                 android:id="@+id/team_blue_score"
                 style="@style/styleScore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/_0"
                 android:textColor="@color/blue" />
 
@@ -122,6 +120,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:contentDescription="@string/redteam"
                 android:src="@drawable/team_blue" />
         </LinearLayout>
     </LinearLayout>
@@ -132,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="120dp"
         android:background="@color/orange"
         android:onClick="resetScoreButton"
         android:text="@string/reset" />

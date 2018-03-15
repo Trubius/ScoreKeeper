@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">Score Keeper</string>
-    <string name="team_a">Team A</string>
     <string name="eagle">Eagle</string>
     <string name="birdie">Birdie</string>
     <string name="par">Par</string>
     <string name="bogey">Bogey</string>
     <string name="double_bogey">Double bogey</string>
-    <string name="team_b">Team B</string>
     <string name="_0">0</string>
     <string name="reset">reset</string>
+    <string name="redteam">Red Team</string>
+    <string name="blueteam">Blue Team</string>
+    <string name="background">background</string>
 </resources>
